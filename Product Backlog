@@ -1,46 +1,146 @@
-Metodologia de levantamento de requisitos utilizado:
-Scrum:
-Equipe Scrum:
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README - Projeto Helpdesk com IA</title>
+</head>
+<body>
 
-André Takashi Prado Takamura - G97CJD1
-Thiago Paulino da Silva - R0158I6
-Fabrício Santos Cavalcante - R095991
-Lívia Vieira Jacó - G87FED0
-Tainara Lais Viana Mota - C92GED9
-Tayná da Silva - G9595H8
+<div align="center">
+    <img src="../assets/capa-readme-documentation.png" alt="capa-readme" width="100%" />
+</div>
 
-Fase 1 – Product Backlog:
-Objetivo Geral do sistema:
-Criação de sistema de um suporte técnico inteligente, que utilize inteligência artificial para triagem inicial, categorização automática de chamados e sugestão de soluções, 
-visando otimizar o tempo de resposta e reduzir a sobrecarga da equipe de TI. Aplicando a LGDP aplicada a todos os dados pessoais tratados no sistema.
-Objetivos específicos:
-Desenvolver e implementar um portal de chamados integrado e eficiente, que possibilite. 
-Facilitar a comunicação entre usuários (clientes e atendentes).
-Oferecer recursos avançados de pesquisa e filtragem.
-Gerar relatórios detalhados para análise de desempenho.
-Garantir acessibilidade em dispositivos móveis.
-Assegurar a segurança dos dados e informações.
-Priorizar a escalabilidade e desempenho.
-Fornecer uma interface intuitiva e fácil de usar.
-Garantir confiabilidade e integridade dos dados.
+<br>
 
+# Planejamento das Sprints - Projeto Helpdesk com IA
 
-Requisitos funcionais e não funcionais:
-Requisitos:
--Funcionais: 
-* Sistema deve permitir que os usuários (cliente ou funcionários) regristrem novos chamados com descrição do problema. 
-* Deve permitir que os atendentes visualizem, editem e alterem o status dos chamados (Aberto, em atendimento, resolvido ou fechado)
-* O sistema deve permitir que os usuários definam ou editem a prioridade do chamado ao registrá-lo ou ao alterá-lo. As opções de prioridade devem incluir pelo menos: Baixa, Média, Alta, Urgente.
-* Os usuários podem adicionar comentários dentro dos chamados para comunicar com outros membros da equipe (anotação privada) e interações com os usuários(clientes) 
-* O sistema deve manter um histórico completo dos chamados, incluindo todas as alterações e interações (comentários, mudanças de status, alterações na prioridade) de forma detalhada e auditável.
+Este documento apresenta o planejamento detalhado das sprints para o desenvolvimento de um sistema de Helpdesk com Inteligência Artificial. O projeto segue a metodologia ágil Scrum e contempla funcionalidades essenciais como abertura e gestão de chamados, comentários, filtros, relatórios e interface amigável.
 
--Não-Funcionais: 
-* O sistema deve permitir que os usuários pesquisem e filtrem chamados com base em diversos parâmetros, como: data de criação, status, prioridade, responsável, cliente, tipo de problema, entre outros.
-* o sistema deve gerar relatórios detalhados sobre os chamados (quantidade de chamados por período, tempo médio de resolução, número de chamados abertos/resolvidos)
-* O sistema deve ser escalável para acomodar um aumento no número de chamados e usuários, sem impacto significativo na performance.
-* O sistema deve ser completamente acessível em dispositivos móveis, incluindo smartphones e tablets, com uma interface responsiva que se adapte a diferentes tamanhos de tela e mantenha a usabilidade.
-* O sistema deve ser capaz de lidar com até X chamados simultâneos sem degradar a performance, respondendo às requisições em no máximo Y segundos.
+<details>
+<summary><strong>Sprint 1 - Estrutura Básica do Sistema</strong></summary>
 
-Fase 2 -  Sprint Planning:
-Fase 3 – Sprint Backlog:
-Fase 4  – Product Increment: 
+## User Stories
+
+### PAS - 02 - Cadastro de Chamados
+- Permitir que usuários registrem chamados.
+- Campo para descrição detalhada.
+- Upload de anexos (imagens/documentos).
+- Notificação de status ao usuário.
+
+### PAS - 08 - Gestão de Chamados
+- Painel para visualizar e alterar chamados.
+- Sistema de categorias.
+- Atribuição de chamados a atendentes.
+
+### PAS - 14 - Prioridade do Chamado
+- Opção de prioridade: Baixa, Média, Alta, Crítica.
+- Permitir que atendentes alterem prioridade.
+
+### PAS - 12 - Comentários e Interação
+- Sistema de comentários.
+- Histórico de interações.
+
+### PAS - 16 - Status de Chamado
+- Criar status configuráveis (Aberto, Em andamento, Resolvido etc).
+- Administração dos status pelo gestor.
+
+### PAS - 18 - Histórico de Chamados
+- Registro de mudanças.
+- Interface para visualização do histórico.
+
+## Definition of Done
+- Código funcional no GitHub.
+- Layouts implementados.
+- Funcionalidades integradas ao sistema.
+- Testes realizados e aprovados.
+
+## Definition of Ready
+- User stories claras e com critérios definidos.
+- Wireframes disponíveis para cada funcionalidade.
+
+## Burndown
+<img src="BurnDown/BurnDown_Sprint1.PNG" alt="Burndown Sprint 1" width="100%" />
+
+</details>
+
+<details>
+<summary><strong>Sprint 2 - Filtros e Métricas</strong></summary>
+
+## User Stories
+
+### PAS - 04 - Pesquisa e Filtros
+- Busca por palavra-chave, ID e usuário.
+- Filtros por data, status, prioridade e categoria.
+
+### PAS - 09 - Relatórios e Métricas
+- Relatórios de chamados (abertos/fechados/pendentes).
+- Tempo médio de resolução.
+- Métricas de desempenho da equipe.
+
+## Definition of Done
+- Código funcional e testado.
+- Layouts integrados.
+- Funcionalidades operacionais no sistema.
+- Documentação atualizada.
+
+## Definition of Ready
+- Critérios de aceitação definidos.
+- Wireframes prontos para cada módulo.
+
+## Burndown
+<img src="BurnDown/BurnDown_Sprint2.PNG" alt="Burndown Sprint 2" width="100%" />
+
+</details>
+
+<details>
+<summary><strong>Sprint 3 - Interface e Experiência do Usuário</strong></summary>
+
+## User Stories
+
+### PAS - 36 - Usabilidade e Interface
+- Layout responsivo para desktop e mobile.
+- Interface intuitiva.
+- Feedback visual para ações (confirmações, alertas etc).
+
+## Definition of Done
+- Interface finalizada e funcional.
+- Layouts aprovados.
+- Documentação de instalação atualizada.
+
+## Definition of Ready
+- Layouts definidos e aprovados.
+- User stories revisadas com critérios claros.
+
+## Burndown
+<img src="BurnDown/BurnDown_Sprint3.PNG" alt="Burndown Sprint 3" width="100%" />
+
+</details>
+
+<details>
+<summary><strong>Sprint 4 - Recuperação de Senha e Ajustes Finais</strong></summary>
+
+## Funcionalidades previstas:
+- Recuperação de senha via e-mail (link gerado automaticamente).
+- Tela de redefinição segura.
+
+### Wireframe de redefinição de senha
+<img src="Wireframes/WireframePAS-34-2.JPG" alt="Wireframe Redefinição Senha" width="50%" />
+
+## Burndown
+<img src="BurnDown/BurnDown_Sprint4.PNG" alt="Burndown Sprint 4" width="100%" />
+
+</details>
+
+---
+
+# Diagrama de Entidade-Relacionamento (DER)
+<img src="DER_BD.png" alt="DER_BD" width="100%" />
+
+<br>
+<div align="center">
+    <img src="../assets/footer.png" alt="footer" width="100%" />
+</div>
+
+</body>
+</html>
